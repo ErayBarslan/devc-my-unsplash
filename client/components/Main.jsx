@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import Masonry from 'react-masonry-css'
 import { usePhotoContext } from '../context/PhotoContext'
 import DeleteModal from './DeleteModal'
+import Loading from './Loading'
 
 const Main = () => {
-  const { photos } = usePhotoContext()
+  const { photos, loading } = usePhotoContext()
   const [showDeleteModal, setShowDeleteModal] = useState(false)
   const [photo, setPhoto] = useState({})
 
@@ -17,6 +18,9 @@ const Main = () => {
 
   return (
     <MainContainer>
+      {
+        loading && <Loading />
+      }
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="masonry-grid"

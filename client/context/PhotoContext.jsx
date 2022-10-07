@@ -111,7 +111,8 @@ export const PhotoContextProvider = ({ children }) => {
       setPage,
       query,
       setQuery,
-      fetchPhotos
+      fetchPhotos,
+      loading
     }}>
       {children}
     </PhotoContext.Provider>
