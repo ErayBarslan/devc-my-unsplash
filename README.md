@@ -42,4 +42,4 @@
 - User story: I can add a new photo to the list - the new photo should be on top of the list.
 - User story: I can search for photos by label.
 - User story: When I hover a photo, I can see a label and a delete button.
-- User story: I can delete images by entering passwor.
+- User story: I can delete images by entering password.
